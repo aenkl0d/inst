@@ -28,9 +28,9 @@ for(let i = 0; i < 100; i++){
 
 function like(post) {
     let likesElement = post.querySelector(".numberOfLikes");
-    let currentLikes = parseInt(likesElement.textContent.trim());
-    currentLikes++;
-    likesElement.textContent = currentLikes;
+    let Likesrn = parseInt(likesElement.textContent.trim());
+    Likesrn++;
+    likesElement.textContent = Likesrn;
 }
 
 
