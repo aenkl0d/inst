@@ -27,10 +27,10 @@ for(let i = 0; i < 100; i++){
 
 
 function like(post) {
-    let likesElement = post.querySelector(".numberOfLikes");
-    let Likesrn = parseInt(likesElement.textContent.trim());
+    let likeskol = post.querySelector(".numberOfLikes");
+    let Likesrn = parseInt(likeskol.textContent.trim());
     Likesrn++;
-    likesElement.textContent = Likesrn;
+    likeskol.textContent = Likesrn;
 }
 
 
