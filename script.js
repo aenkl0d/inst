@@ -17,7 +17,7 @@ for(let i = 0; i < 100; i++){
     postText.innerHTML = dataTexts[i % 3];
 
     let likeBtn = newPost.getElementsByClassName("likeBtn")[0];
-    // Назначаем событие клика на кнопку лайка
+   
     likeBtn.addEventListener("click", function() {
         like(newPost);
     });
@@ -25,7 +25,7 @@ for(let i = 0; i < 100; i++){
     korobkaPostov.appendChild(newPost);
 }
 
-// Функция для добавления лайка
+
 function like(post) {
     let likesElement = post.querySelector(".numberOfLikes");
     let currentLikes = parseInt(likesElement.textContent.trim());
@@ -33,7 +33,7 @@ function like(post) {
     likesElement.textContent = currentLikes;
 }
 
-// Функция для добавления комментария
+
 function addComment(post) {
     let commentText = prompt("Введите ваш комментарий:");
     if (commentText !== null && commentText !== "") {
@@ -49,10 +49,10 @@ function addComment(post) {
 
 
 for(let i = 0; i < 100; i++){
-    // ...
+   
 
     let commentBtn = newPost.getElementsByClassName("commentBtn")[0];
-    // Назначаем событие клика на кнопку отправки комментария
+   
     commentBtn.addEventListener("click", function() {
         addComment(newPost);
     });
@@ -60,7 +60,7 @@ for(let i = 0; i < 100; i++){
     korobkaPostov.appendChild(newPost);
 }
 
-// Функция для добавления комментария
+
 function addComment(post) {
     let commentInput = post.querySelector(".commentInput");
     let commentText = commentInput.value.trim();
@@ -70,7 +70,7 @@ function addComment(post) {
         newComment.classList.add("comment");
         newComment.textContent = commentText;
         commentsSection.appendChild(newComment);
-        // Очищаем поле ввода после добавления комментария
+      
         commentInput.value = "";
     }
 }
